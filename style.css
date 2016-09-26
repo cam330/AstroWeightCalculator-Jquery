@@ -1,0 +1,29 @@
+body
+{
+	padding: 30px 50% 0px 20px;
+}
+
+#myh1
+{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+	margin-bottom: 40px;
+	font-size: 1.7em;
+	white-space: nowrap;
+}
+
+label
+{
+	white-space: nowrap;
+}
+
+#calculateButton
+{
+	margin-left: -10px;
+}
+
+#expectedOutput
+{
+	margin-top: 7px;
+	font-size: 1.2em;
+}

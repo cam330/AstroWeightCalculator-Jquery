@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+
+</script>
+
+</script>
+  <title>jQuery Mortgage Calculator</title>
+</head>
+<body>
+  <h1 id="myh1" class="col-md-offset-3 col-md-9">jQuery Mortgage Calculator</h1>
+  	<form id="content" class="form-horizontal">
+	  	<div class="form-group">
+	  		<label class="col-md-3 control-label">Loan Balance</label>
+	  		<div class="col-md-9">
+	  			<input id="balanceInput" class="form-control" name="balance" value="$">
+	  		</div>
+	  	</div>
+	  	<div id="rate" class="form-group">
+	  		<label class="col-md-3 control-label text-left">Interest Rate (%)</label>
+	  		<div class="col-md-9">
+	  		<input id="rateInput" class="form-control"  type="number" name="rate" min="0" max="100">
+	  		</div>
+	  	</div>
+	  	<div id="term" class="form-group">
+	  		<label class="col-md-3 control-label text-left">Loan Term (years)</label>
+	  		<div class="col-md-9">
+	  		<input id="termInput" class="form-control" type="number" name="term" min="0">
+	  		</div>
+	  	</div>
+	  	<div id="period" class="form-group">
+	  		<label class="col-md-3 control-label text-left">Period</label>
+	  		<div class="col-md-9">
+		  		<select id="periodSelect" class="form-control">
+		  			<option value="12">Monthly</option>
+		  			<option value="6">Bimonthly</option>
+		  		</select>
+	  		</div>
+	  	</div>
+	  	<div id="calculate" class="col-md-offset-3 col-md-2">
+	  		<button id="calculateButton" type="button" class="btn btn-primary">Calculate</button>
+	  	</div>
+		 <p id="expectedOutput" class="col-md-6">
+		</p>
+	</form>
+</body>
+</html>
