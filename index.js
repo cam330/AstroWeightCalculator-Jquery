@@ -1,12 +1,27 @@
 
 
+
 $(document).ready(function(){
+
+$("#calculateButton").prop("disabled", true);
 
 $('#balanceInput').keyup(function() {
    $(this).val(function(i,v) {
      return '$' + v.replace('$','');
    });
  });
+
+$("input").keyup(function(){
+
+	var findIfZero =  $("#balanceInput").val().split("$").pop().length * $("#rateInput").val().length * $("#termInput").val().length;
+	if (findIfZero > 0) {
+		$("#calculateButton").prop("disabled", false);
+	}
+	else
+	{
+		$("#calculateButton").prop("disabled", true);
+	}
+});
 
 
 	$("#calculateButton").click(function(click){
@@ -31,7 +46,8 @@ $('#balanceInput').keyup(function() {
 			{
 				if (interestRate>100) {
 					alert("Your interest rate percentage is too high.");
-				} else
+				} 
+				else
 				{
 					var numberOfPayments = loanTerm * periodValue;
 					var monthlyInterestRate = (interestRate / 100)/periodValue;
@@ -46,6 +62,12 @@ $('#balanceInput').keyup(function() {
 		
 
 });
+
+
+
+
+
+
 
 
 
